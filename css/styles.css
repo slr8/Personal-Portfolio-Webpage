@@ -1,0 +1,257 @@
+:root {
+    --main-color: #19c8fa;
+    --transparent-color: rgb(15 116 143 / 70%);
+    --section-padding: 100px;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eee;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+head {
+    display: none;
+    visibility: hidden;
+}
+
+#navbar {
+    position: fixed;
+    background-color: #Be3144;
+    display: flex;
+    width: 100%;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p.head-name {
+    width: 40vw;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #1f1f21;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+a {
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    width: calc(100%/3 - 40px);
+}
+
+section#welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #1f1f21;
+}
+
+h1,
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+h1 {
+    font-size: 6rem;
+    color: white;
+}
+
+p.title {
+    font-size: 3rem;
+    font-weight: 200;
+    font-style: italic;
+    color: #be3144;
+}
+
+section#projects {
+    background-color: #45567d;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+h2.project-tile {
+    color: white;
+    border-bottom: white solid;
+    max-width: 837px;
+    margin: 0 auto 60px;
+}
+
+.projects-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    margin-bottom: -8px;
+}
+
+p.project-title {
+    background-color: #303841;
+    padding: 15px;
+}
+
+@media (max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media (max-width: 61.25em) {
+    html {
+        font-size: 58%;
+    }
+}
+
+
+@media (max-width: 28.75em) {
+    html {
+        font-size: 55%;
+    }
+}
+
+/* CSS */
+.button-28 {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 15%;
+    will-change: transform;
+    margin: 20px 42vw;
+}
+
+.button-28:disabled {
+    pointer-events: none;
+}
+
+.button-28:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-28:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+i.fas.fa-chevron-right {
+    margin-left: 6px;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 92vh;
+    padding: 0 2rem;
+    background: #303841;
+}
+
+.contact-section-header>h2 {
+    font-size: 4vw;
+    color: white;
+}
+
+.contact-section-header>p {
+    font-style: italic;
+    color: white;
+    font-size: large;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+.contact-section-header>p {
+    font-style: italic;
+}
+
+.links {
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+
+
+.links:hover {
+    transform: translateY(8px);
+}
+
+.a-header {
+    padding: 20px;
+}
+
+.a-header:hover {
+    background-color: #1A1A1A;
+    padding: 20px;
+    transition: 0.3s;
+
+}
+
+.code {
+    color: #303841;
+    transition: color 0.3s ease-out;
+}
+
+.projects-tile:hover .code {
+    color: #ff7f50;
+}
